@@ -59,7 +59,7 @@ def get_return(lookup, return_fields=None):
 
 def flatten_custom(custom_dict):
     return {
-        k: v if not isinstance(v, dict) else v["value"] for k, v in custom_dict.items()
+        k: v if not isinstance(v, dict) else v["id"] for k, v in custom_dict.items()
     }
 
 
